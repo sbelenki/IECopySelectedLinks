@@ -1,0 +1,8 @@
+<script language="VBScript">
+    On Error Resume Next
+	Set objCopier = CreateObject("IECopySelectedLinks.Copier")
+	If 0 = Err Then
+        objCopier.AddDocument external.menuArguments.document
+    End If
+    Set objCopier = Nothing
+</script>
